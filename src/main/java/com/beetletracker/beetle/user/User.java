@@ -26,9 +26,9 @@ public class User {
     private String lastName;
     private LocalDate creationDate;
     private String password;
-    private String passwordSalt;
     private String email;
-    @ManyToMany
+    private boolean enabled;
+    @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "user_role")
     private Set<Role> roles;
 }
