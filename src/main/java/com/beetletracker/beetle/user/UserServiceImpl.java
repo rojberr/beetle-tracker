@@ -2,6 +2,7 @@ package com.beetletracker.beetle.user;
 
 import com.beetletracker.beetle.role.Role;
 import com.beetletracker.beetle.role.RoleService;
+import com.beetletracker.beetle.role.RoleType;
 import lombok.AllArgsConstructor;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -30,7 +31,7 @@ public class UserServiceImpl implements UserService{
         user.setCreationDate(LocalDate.now());
 
         Set<Role> roles = new HashSet<>();
-        Role role = roleService.findByRole("ROLE_USER");
+        Role role = roleService.findByRoleType(RoleType.USER);
         roles.add(role);
         user.setRoles(roles);
 

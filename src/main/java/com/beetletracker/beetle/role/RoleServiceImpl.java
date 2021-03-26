@@ -9,7 +9,9 @@ public class RoleServiceImpl implements RoleService{
     private final RoleRepository roleRepository;
 
     @Override
-    public Role findByRole(String role) {
-        return roleRepository.findByRole(role).orElseThrow(()->new IllegalStateException("Role "+role+" does not exists!"));
+    public Role findByRoleType(RoleType roleType) {
+        String role = "ROLE_"+roleType.toString();
+        return roleRepository.findByRole(role)
+                .orElseThrow(()->new IllegalStateException("Role "+role+" does not exists!"));
     }
 }

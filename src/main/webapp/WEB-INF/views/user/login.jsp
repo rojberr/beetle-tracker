@@ -8,8 +8,8 @@
 <body>
 
 <form method="post">
-    Email: <input type="text" name="username"/><br>
-    Password: <input type="text" name="password"/><br>
+    Email: <input type="email" name="username"/><br>
+    Password: <input type="password" name="password"/><br>
     <input type="submit" value="Log in">
     <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
     <a href="/register">Create Account</a>

@@ -12,7 +12,7 @@
     First Name: <form:input path="firstName"/><br>
     Last Name: <form:input path="lastName"/><br>
     Email: <form:input path="email" type="email"/><br>
-    Password: <form:input path="password"/><br>
+    Password: <form:input path="password" type="password"/><br>
     <input type="submit" value="Register">
 </form:form>
 
