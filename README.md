@@ -1,6 +1,9 @@
 # BeetleTracker - Issue and bug tracker
 
-:beetle: This is Jay's Issue Tracker :beetle:
+:beetle: This is a Bug and Issue Tracker :beetle:
+
+Check it out:
+<https://beetle-tracker.herokuapp.com/>
 
 A simple tool which I made ... -fill out later-
 
