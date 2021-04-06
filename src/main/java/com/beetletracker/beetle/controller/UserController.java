@@ -13,6 +13,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 public class UserController {
     private final UserService userService;
 
+    @GetMapping("/demo")
+    public String demoPageGet(){
+        return "user/demo";
+    }
+
     @GetMapping("/login")
     public String loginPageGet(){
         return "user/login";
