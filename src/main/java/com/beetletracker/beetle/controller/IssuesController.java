@@ -1,26 +1,34 @@
 package com.beetletracker.beetle.controller;
 
-import com.beetletracker.beetle.issues.IssuesService;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.beetletracker.beetle.issues.Issue;
+import com.beetletracker.beetle.issues.IssueCategoryService;
+import lombok.AllArgsConstructor;
+import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
-//@RequestMapping(path = "api/v1/issues")
+@AllArgsConstructor
 public class IssuesController {
+    private final IssueCategoryService issueCategoryService;
 
-    private final IssuesService issuesService;
-
-    @Autowired
-    public IssuesController(IssuesService issuesService) {
-        this.issuesService =  issuesService;
-    }
-//    @GetMapping
-//    public List<Issue> getIssues() {
-//        return issuesService.getIssues();
-//    }
     @GetMapping("/create")
     public String createGet() {
         return "issues/report";
+    }
+
+    @GetMapping("/app/issue/create")
+    public String issueAddGet(Model model){
+        model.addAttribute("issue", new Issue());
+        model.addAttribute("issue", new Issue());
+        model.addAttribute("categories", issueCategoryService.findAll());
+        return "issues/addIssue";
+    }
+
+    @PostMapping("/app/issue/create")
+    public String issueAddPost(Issue issue, Authentication auth){
+        return "redirect:/";
     }
 }
