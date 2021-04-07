@@ -58,6 +58,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
+            <form method="post">
             <div class="card-group">
                 <div class="card p-4">
                     <div class="card-body">
@@ -66,7 +67,6 @@
                         <div class="input-group mb-3">
                             <div class="input-group-prepend"><span class="input-group-text">
                       <svg class="c-icon">
-                          <form method="post">
                         <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-user"></use>
                       </svg></span></div>
                             <input class="form-control" type="text" placeholder="Email" name="username">
@@ -95,11 +95,11 @@
                             <h2>Sign up</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             <a href="/register"><button class="btn btn-lg btn-outline-light mt-3" type="button">Register Now!</button></a>
-                            </form>
                         </div>
                     </div>
                 </div>
             </div>
+            </form>
         </div>
     </div>
 </div>

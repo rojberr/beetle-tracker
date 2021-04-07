@@ -243,7 +243,7 @@
                     </p>
                     <p class="text-center">
                         <a href="<c:url value='/user/register'/> ">
-                            I already have an account</p>
+                            I already have an account</a></p>
                 </div>
             </div>
         </div>
