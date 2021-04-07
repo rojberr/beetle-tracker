@@ -4,6 +4,7 @@ import lombok.Data;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.time.LocalTime;
 
 
 @Entity
@@ -22,6 +23,7 @@ public class Issue {
     )
     private Long id;
     private LocalDate dob;
+    private LocalTime tob;
     private String subject;
     @ManyToOne
     private IssueCategory category;

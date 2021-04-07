@@ -14,4 +14,9 @@ public class IssueCategoryServiceImpl implements IssueCategoryService {
     public List<IssueCategory> findAll() {
         return issueCategoryRepository.findAll();
     }
+
+    @Override
+    public IssueCategory findById(Long id) {
+        return issueCategoryRepository.findById(id).orElseThrow(()->new IllegalStateException("This Category does not exists"));
+    }
 }

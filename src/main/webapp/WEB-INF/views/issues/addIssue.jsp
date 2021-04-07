@@ -111,12 +111,7 @@
                             <!-- /.row-->
                             <div class="row">
                                 <div class="form-group col-sm-8">
-                                    <label for="category">Category</label>
-                                    <select class="form-control" id="category">
-                                        <c:forEach var="category" items="${categories}">
-                                            <option value="${category.id}">${category.category}</option>
-                                        </c:forEach>
-                                    </select>
+                                    <form:select path="categoryId" cssClass="form-control" items="${categories}" itemLabel="category" itemValue="id"/>
                                 </div>
                             </div>
                             <!-- /.row-->

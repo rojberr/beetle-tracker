@@ -4,4 +4,5 @@ import java.util.List;
 
 public interface IssueCategoryService {
     List<IssueCategory> findAll();
+    IssueCategory findById(Long id);
 }
