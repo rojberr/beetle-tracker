@@ -15,7 +15,7 @@ public class UserController {
 
     @GetMapping("/demo")
     public String demoPageGet(){
-        return "user/demo";
+        return "demo";
     }
 
     // Login form

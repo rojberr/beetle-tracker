@@ -1,14 +1,13 @@
+<!DOCTYPE html>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!--
-* Created by Rojberr using: ...
+* Created by Rojberr & michals3r3k  using: ...
 * Start Bootstrap - Freelancer v6.0.5
 * Licensed under MIT
 * Copyright 2013-2020 Start Bootstrap
 * (https://github.com/StartBootstrap/startbootstrap-freelancer/blob/master/LICENSE)
 -->
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
