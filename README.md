@@ -80,7 +80,3 @@ at best utilize Bootstrap template and put it on my project.
 with f.e. admin rights and user rights >> at best utilize AuthO
 
 5. Handles and implements security
-
-## License
-
-This project is licensed under the MIT license. See the [LICENSE](../LICENSE) file for more info.

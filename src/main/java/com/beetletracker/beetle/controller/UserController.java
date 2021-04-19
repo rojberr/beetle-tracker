@@ -18,23 +18,9 @@ public class UserController {
         return "user/demo";
     }
 
-    // Login form
     @GetMapping("/login")
     public String loginPageGet(){
         return "user/login";
-    }
-
-    // Logout
-    @GetMapping("/logout")
-    public String logoutPageGet(){
-        return "redirect:/";
-    }
-
-    // Login form with error
-    @GetMapping("/login-error")
-    public String loginError(Model model) {
-        model.addAttribute("loginError", true);
-        return "login.html";
     }
 
     @GetMapping("/register")
