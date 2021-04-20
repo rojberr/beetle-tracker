@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
+import java.util.List;
 
 @Service
 @AllArgsConstructor
@@ -30,5 +31,10 @@ public class IssueServiceImpl implements IssueService {
         issue.setTob(LocalTime.now());
 
         issueRepository.save(issue);
+    }
+
+    @Override
+    public List<Issue> findAllByUser(User user) {
+        return issueRepository.findAll();
     }
 }
