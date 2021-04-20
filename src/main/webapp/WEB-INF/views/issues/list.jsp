@@ -31,29 +31,29 @@
         </div>
         <!-- Add Issue Section Form-->
         <div class="row my-5">
-            <div class="col-md-4">
-                <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19.-->
-                <c:forEach items="${issues}" var="issue">
-                <div class="card border-danger">
-                    <div class="card-header">
-                        <div class="row">
-                            <div class="col-md-9">
-                            ${issue.subject}
-                            </div>
-                            <div class="col-md-3">
-                                <a href="#" class="btn btn-circle btn-danger" style="margin: 0"><i class="fas fa-trash"></i></a>
+            <c:forEach items="${issues}" var="issue">
+                <div class="col-md-4 my-2">
+                    <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19.-->
+                    <div class="card border-danger">
+                        <div class="card-header">
+                            <div class="row">
+                                <div class="col-md-9">
+                                ${issue.subject}
+                                </div>
+                                <div class="col-md-3">
+                                    <a href="#" class="btn btn-circle btn-danger" style="margin: 0"><i class="fas fa-trash"></i></a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="card-body">
-                        <blockquote class="blockquote mb-0">
-                            <p>${issue.description}.</p>
-                            <footer class="blockquote-footer">${issue.dob}</footer>
-                        </blockquote>
+                        <div class="card-body">
+                            <blockquote class="blockquote mb-0">
+                                <p>${issue.description}.</p>
+                                <footer class="blockquote-footer">${issue.dob}</footer>
+                            </blockquote>
+                        </div>
                     </div>
                 </div>
-                </c:forEach>
-            </div>
+            </c:forEach>
         </div>
     </div>
 </section>

@@ -36,6 +36,7 @@
 
                 <sec:authorize access="isAuthenticated()">
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="<c:url value="/app/home"/>">Home</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="<c:url value="/app/issue/create"/>">Add Issue</a></li>
                     <li class="dropdown mx-0 mx-lg-1">
                         <a href="#" class="dropdown-toggle nav-link py-3 px-0 px-lg-3 rounded" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>
                             ${currentUser.firstName} ${currentUser.lastName}
