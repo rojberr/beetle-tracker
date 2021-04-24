@@ -79,17 +79,20 @@
                             <input class="form-control" type="password" placeholder="Password" name="password">
                         </div>
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col-8">
                                 <button type="submit" class="btn btn-primary px-4" type="button">Login</button>
                                 <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
                             </div>
-                            <div class="col-6 text-right">
+                            <div class="col-8 text-right">
                                 <button class="btn btn-link px-0" type="button">Forgot password?</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="card text-white bg-primary py-5 d-md-down-none" style="width:44%">
+            </div>
+            </form>
+            <div class="row justify-content-center">
+                <div class="card p-4 text-white bg-primary py-5">
                     <div class="card-body text-center">
                         <div>
                             <h2>Sign up</h2>
@@ -99,7 +102,6 @@
                     </div>
                 </div>
             </div>
-            </form>
         </div>
     </div>
 </div>
